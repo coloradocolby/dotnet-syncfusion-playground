@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Dotnet SyncFusion Playground</h1>
+</div>
+
+@{Html.BeginForm("CreateDocument", "Home", FormMethod.Get);
+    {
+        <button class="btn btn-success m-2">Generate PDF</button>
+    }
+    Html.EndForm();
+}
+
+@{Html.BeginForm("TransposeData", "Home", FormMethod.Get);
+    {
+        <button class="btn btn-success m-2">Write data onto PDF</button>
+    }
+    Html.EndForm();
+}
